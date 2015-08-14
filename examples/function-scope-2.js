@@ -1,3 +1,4 @@
+
 var myGlobalVar = 123;
 
 function myFunction1() {
@@ -11,5 +12,5 @@ function myFunction1() {
     }
 }
 
-myFunction1();
-// Output: 123 456 789
+myFunction1(); // 123 456 789
+
