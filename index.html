@@ -251,6 +251,29 @@
                 </section>
 
                 <section>
+
+                    <section>
+                        <h2>Lodash</h2>
+                        <ul>
+                            <li>Started with Underscore</li>
+                            <li>Utility Belt</li>
+                            <li>Functional Paradigm</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Each w/Array</h2>
+                        <pre><code data-trim contenteditable data-content="examples/lodash/each-array.js"></code></pre>
+                    </section>
+
+                    <section>
+                        <h2>Each w/Object</h2>
+                        <pre><code data-trim contenteditable data-content="examples/lodash/each-object.js"></code></pre>
+                    </section>
+
+                </section>
+
+                <section>
                     <h3>Javascript Resources</h3>
                     <ul style="width: 100%;">
                         <li>
@@ -321,6 +344,10 @@
                     }
                 }
 
+                setTimeout(function() {
+                    Reveal.layout();
+                }, 500);
+
                 function loadContent(codeNode, contentName) {
                     //console.log("Loading " + contentName);
                     fetch(contentName, {
@@ -330,7 +357,6 @@
                     }).then(function(text) {
                         codeNode.textContent = text;
                         hljs.highlightBlock(codeNode);
-                        Reveal.navigateTo();
                     }).catch(function(err) {
                         console.error("Could not load " + contentName);
                         console.error(err);
