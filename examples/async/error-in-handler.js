@@ -3,7 +3,7 @@ wait()
     .then(function() {
         throw new Error("Something bad happened!");
     }, function() {
-        console.log("Rejected!");
+        console.log("Rejected!"); // ... not called
     });
 
 function wait() {
