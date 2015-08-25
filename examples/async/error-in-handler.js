@@ -2,8 +2,7 @@
 wait()
     .then(function() {
         throw new Error("Something bad happened!");
-    })
-    .catch(function() {
+    }, function() {
         console.log("Rejected!");
     });
 
