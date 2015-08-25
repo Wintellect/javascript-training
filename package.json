@@ -40,7 +40,8 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-sass": "~0.14.0",
     "grunt-zip": "~0.7.0",
-    "node-sass": "~0.9.3"
+    "node-sass": "~0.9.3",
+    "q": "^1.4.1"
   },
   "licenses": [
     {
