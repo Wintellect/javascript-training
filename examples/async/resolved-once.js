@@ -1,15 +1,15 @@
 
 var rv = 0;
 var deferred = Q.defer();
-function waitFxn() {
+function wait() {
     deferred.resolve(rv += 1);
     console.log("rv", rv);
     return deferred.promise;
 }
 
-waitFxn().then(function(v) { console.log("v", v); });
-waitFxn().then(function(v) { console.log("v", v); });
-waitFxn().then(function(v) { console.log("v", v); });
+wait().then(function(v) { console.log("v", v); });
+wait().then(function(v) { console.log("v", v); });
+wait().then(function(v) { console.log("v", v); });
 
 // rv 1
 // rv 2
